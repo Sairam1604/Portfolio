@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sairam R | Full Stack Developer & Django Specialist</title>
+  <meta name="description"
+    content="Portfolio of Sairam R - Computer Science Engineering student specializing in Full Stack Development, Django, MySQL, and Cybersecurity.">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Ambient Neon Background Glow & Unique Constellation Particle Canvas -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="ambient-glow-violet" aria-hidden="true"></div>
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky High-Tech Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-monogram">
+        <span class="logo-badge">SR<span class="brand-dot">_</span></span>
+        <span class="brand-name">SAIRAM R</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <span>ASPIRING SOFTWARE DEVELOPER • FULL STACK</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="name-highlight">Sairam R</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <span>Specialized in</span>
+            <span class="role-badge">Django & Full Stack Development</span>
+          </div>
+
+          <p class="hero-summary">
+            Results-driven Computer Science Engineering student with hands-on experience in Full Stack Development,
+            Django, MySQL, and Cybersecurity fundamentals. Seeking an entry-level Software Developer role to leverage
+            programming, database management, and problem-solving skills in building scalable web applications.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-neon-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              View DineAt Project
+            </a>
+            <a href="#contact" class="btn btn-neon-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Get in Touch
+            </a>
+            <a href="resume.pdf" download="Sairam_R_Resume.pdf" class="btn btn-glass" title="Download Resume PDF"
+              id="hero-download-resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
+          </div>
+
+          <!-- Quick interactive links bar with live click-to-copy & profile buttons -->
+          <div class="quick-connect-bar">
+            <span class="connect-label">Profiles:</span>
+
+            <a href="https://github.com/Sairam1604" target="_blank" rel="noopener noreferrer" class="social-pill"
+              title="Open GitHub Profile">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+
+            <a href="http://www.linkedin.com/in/sairam-r-471bb2322/" target="_blank" rel="noopener noreferrer"
+              class="social-pill" title="Open LinkedIn Profile">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              LinkedIn
+            </a>
+
+            <a href="https://www.hackerrank.com/profile/sairambramesh" target="_blank" rel="noopener noreferrer"
+              class="social-pill" title="Open HackerRank Profile">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.895 16.488h-1.637v-8.976h1.637v8.976zm5.426-3.805c-.295.428-.738.642-1.328.642-.455 0-.822-.123-1.101-.369-.279-.246-.419-.597-.419-1.053v-4.391h1.637v4.137c0 .227.062.399.186.516.124.117.291.176.502.176.248 0 .445-.078.592-.234.147-.156.221-.383.221-.681v-3.914h1.637v5.188h-1.428l-.247-.852z" />
+              </svg>
+              HackerRank
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photo Card -->
+        <div class="hero-photo-card">
+          <div class="photo-frame-ring"></div>
+          <div class="photo-frame-ring photo-frame-ring-2"></div>
+          <div class="photo-wrapper">
+            <img src="profile.jpeg" alt="Sairam R – Full Stack Developer" class="profile-photo" id="profile-photo" />
+            <div class="photo-overlay-badge">
+              <span class="photo-badge-dot"></span>
+              <span>Open to Work</span>
+            </div>
+          </div>
+          <div class="photo-name-chip">
+            <span class="photo-name-mono">profile.jpeg</span>
+          </div>
+        </div>
+
+        <!-- Terminal-like Overview Card -->
+        <div class="hero-card" id="about">
+          <div class="card-header-bar">
+            <div class="window-dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot active"></span>
+            </div>
+            <span class="card-title-chip">candidate_profile.json</span>
+          </div>
+
+          <div class="quick-stats-grid">
+            <div class="stat-item">
+              <div class="stat-value">8.48 <span style="font-size:0.85rem;color:var(--text-muted)">CGPA</span></div>
+              <div class="stat-label">B.E. Computer Science Engineering (2023-2027)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">12+ <span style="font-size:0.85rem;color:var(--text-muted)">Badges</span></div>
+              <div class="stat-label">Industry Certifications</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">Full Stack</div>
+              <div class="stat-label">Django + MySQL + JavaScript</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">2027</div>
+              <div class="stat-label">Adhiparasakthi Engineering College</div>
+            </div>
+          </div>
+
+          <!-- Quick 1-Click Interactive Copy Rows -->
+          <div class="contact-quick-list">
+            <div class="contact-row">
+              <div class="contact-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>sairambramesh@gmail.com</span>
+              </div>
+              <button class="copy-mini-btn" data-copy="sairambramesh@gmail.com" data-label="Email"
+                title="Copy email to clipboard">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copy
+              </button>
+            </div>
+
+            <div class="contact-row">
+              <div class="contact-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                <span>+91 9043627707</span>
+              </div>
+              <button class="copy-mini-btn" data-copy="+919043627707" data-label="Phone Number"
+                title="Copy phone number">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                Copy
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section-wrapper" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>ENGINEERED PROJECT</span>
+          </div>
+          <h2 class="section-title">Featured <span class="highlight">Full-Stack Application</span></h2>
+          <p class="section-desc">Production-grade web application built with robust backend logic, relational data
+            modeling, and responsive interfaces.</p>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge-top">
+            <div class="badge-featured">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+              FEATURED FULL STACK PROJECT
+            </div>
+            <div class="project-stack-pills">
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML5 & CSS3</span>
+            </div>
+          </div>
+
+          <div class="project-header-content">
+            <h3 class="project-name">DineAt – Digital Food Ordering Platform</h3>
+            <p class="project-tagline">End-to-End Automated Restaurant Workflow & Real-Time Order Management</p>
+          </div>
+
+          <!-- 4 Core Pillars from the Resume -->
+          <div class="project-features-grid">
+            <div class="feature-box">
+              <div class="feature-header">
+                <span class="feature-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </span>
+                <span>User Authentication & Security</span>
+              </div>
+              <p class="feature-desc">
+                Implemented secure user authentication & authorization, session management, password hashing, and
+                role-based access control for customers and restaurant managers.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-header">
+                <span class="feature-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                  </svg>
+                </span>
+                <span>Secure Order Processing & CRUD</span>
+              </div>
+              <p class="feature-desc">
+                Engineered robust CRUD operations allowing dynamic menu updates, customized meal selections, cart
+                computations, and secure order processing workflows.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-header">
+                <span class="feature-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </span>
+                <span>MySQL Relational Database</span>
+              </div>
+              <p class="feature-desc">
+                Designed and integrated normalized MySQL schemas for catalog management, customer profiles, order
+                history, and real-time live order status tracking.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-header">
+                <span class="feature-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </span>
+                <span>Scalable Responsive UI</span>
+              </div>
+              <p class="feature-desc">
+                Built an intuitive, responsive frontend with HTML5, CSS3, and JavaScript to automate restaurant order
+                taking and elevate the dining and delivery experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-action-bar">
+            <div class="project-action-group">
+              <button class="btn btn-neon-primary" data-open-modal="dineat-modal">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                View Architecture Breakdown
+              </button>
+              <a href="https://github.com/Sairam1604" target="_blank" rel="noopener noreferrer"
+                class="btn btn-neon-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                GitHub Repository
+              </a>
+            </div>
+            <button class="btn btn-copy"
+              data-copy="DineAt – Digital Food Ordering Platform (Django, MySQL, JavaScript, HTML5/CSS3) by Sairam R"
+              data-label="Project Summary">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy Details
+            </button>
+          </div>
+        </div>
+
+        <!-- Featured Project 2: AgriBridge -->
+        <div class="project-card" style="margin-top: 2rem;">
+          <div class="project-badge-top">
+            <div class="badge-featured" style="background: linear-gradient(135deg, #00ff88 0%, #10b981 100%);">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              SMART INDIA HACKATHON 2026 (SIH26033)
+            </div>
+            <div class="project-stack-pills">
+              <span class="tech-tag">Full Stack</span>
+              <span class="tech-tag">Digital Marketplace</span>
+              <span class="tech-tag">Supply Chain</span>
+              <span class="tech-tag">AgriTech</span>
+            </div>
+          </div>
+
+          <div class="project-header-content">
+            <h3 class="project-name">Agribridge – Digital Platform to Connect Farmer with Customer</h3>
+            <p class="project-tagline">Direct Farm-to-Consumer Marketplace Eliminating Intermediaries & Driving Price Transparency</p>
+          </div>
+
+          <!-- 4 Core Pillars for AgriBridge -->
+          <div class="project-features-grid">
+            <div class="feature-box">
+              <div class="feature-header">
+                <span class="feature-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="8.5" cy="7" r="4"></circle>
+                    <polyline points="17 11 19 13 23 9"></polyline>
+                  </svg>
+                </span>
+                <span>Verified Farmer Onboarding & Profiles</span>
+              </div>
+              <p class="feature-desc">
+                Enables simple farmer registration, verified producer credentials, digital farm storefronts, and direct produce listing with custom quantity and dynamic pricing controls.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-header">
+                <span class="feature-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </span>
+                <span>100% Transparent Price Breakdown</span>
+              </div>
+              <p class="feature-desc">
+                Discloses farm gate cost, logistic transit fee, and final customer price transparently—eliminating multiple middlemen margins so farmers earn more while buyers pay less.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-header">
+                <span class="feature-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                <span>Nearby Farm Discovery & Traceability</span>
+              </div>
+              <p class="feature-desc">
+                Location-based discovery matches consumers with proximate farms to minimize food miles, ensure maximum freshness, and deliver complete farm-to-doorstep traceability.
+              </p>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-header">
+                <span class="feature-icon-wrapper">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                  </svg>
+                </span>
+                <span>Pre-Order Harvest & Secure Checkout</span>
+              </div>
+              <p class="feature-desc">
+                Allows consumers and bulk buyers to pre-book upcoming harvests with secure digital payment workflows, automated order dispatch, and integrated delivery partner tracking.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-action-bar">
+            <div class="project-action-group">
+              <button class="btn btn-neon-primary" data-open-modal="agribridge-modal">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                View Architecture Breakdown
+              </button>
+              <a href="https://www.youtube.com/watch?v=VpT1Clc6IJU" target="_blank" rel="noopener noreferrer"
+                class="btn btn-neon-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                Watch Prototype Demo
+              </a>
+            </div>
+            <button class="btn btn-copy"
+              data-copy="Agribridge – Digital Platform to Connect Farmer with Customer (Smart India Hackathon 2026, Problem Statement: SIH26033) by Sairam R"
+              data-label="AgriBridge Details">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL & SOFT SKILLS SECTION -->
+    <section class="section-wrapper" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            </svg>
+            <span>SKILL MATRIX</span>
+          </div>
+          <h2 class="section-title">Technical <span class="highlight">Competencies</span></h2>
+          <p class="section-desc">Interactive filterable view of programming languages, web stacks, frameworks,
+            databases, and foundational concepts.</p>
+        </div>
+
+        <!-- Interactive Category Filter Navigation -->
+        <div class="skills-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="languages">Languages & Web</button>
+          <button class="filter-btn" data-filter="backend">Backend & Database</button>
+          <button class="filter-btn" data-filter="core">Core Concepts</button>
+          <button class="filter-btn" data-filter="tools">Tools & Platforms</button>
+          <button class="filter-btn" data-filter="soft">Soft Skills</button>
+        </div>
+
+        <div class="skills-cards-grid">
+          <!-- Programming Languages -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-cat-title">
+                <span class="skill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </span>
+                <span>Programming Languages</span>
+              </div>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-badge"><span class="badge-dot"></span>Python</span>
+              <span class="skill-badge"><span class="badge-dot"></span>JavaScript (ES6+)</span>
+            </div>
+          </div>
+
+          <!-- Web Technologies -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-cat-title">
+                <span class="skill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                    </path>
+                  </svg>
+                </span>
+                <span>Web Technologies</span>
+              </div>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-badge"><span class="badge-dot"></span>HTML5</span>
+              <span class="skill-badge"><span class="badge-dot"></span>CSS3</span>
+              <span class="skill-badge"><span class="badge-dot"></span>JavaScript</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Frameworks & Database -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-cat-title">
+                <span class="skill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </span>
+                <span>Frameworks & Databases</span>
+              </div>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-badge"><span class="badge-dot"></span>Django</span>
+              <span class="skill-badge"><span class="badge-dot"></span>MySQL</span>
+              <span class="skill-badge"><span class="badge-dot"></span>ORM Modeling</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Query Optimization</span>
+            </div>
+          </div>
+
+          <!-- Core Concepts -->
+          <div class="skill-card" data-category="core">
+            <div class="skill-card-top">
+              <div class="skill-cat-title">
+                <span class="skill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </span>
+                <span>Core Engineering Concepts</span>
+              </div>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-badge"><span class="badge-dot"></span>OOPS Principles</span>
+              <span class="skill-badge"><span class="badge-dot"></span>CRUD Operations</span>
+              <span class="skill-badge"><span class="badge-dot"></span>User Authentication</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Cybersecurity Fundamentals</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-card-top">
+              <div class="skill-cat-title">
+                <span class="skill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                    </path>
+                  </svg>
+                </span>
+                <span>Tools & Platforms</span>
+              </div>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-badge"><span class="badge-dot"></span>Git</span>
+              <span class="skill-badge"><span class="badge-dot"></span>GitHub</span>
+              <span class="skill-badge"><span class="badge-dot"></span>VS Code</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Eclipse IDE</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Python IDL</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-card" data-category="soft">
+            <div class="skill-card-top">
+              <div class="skill-cat-title">
+                <span class="skill-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </span>
+                <span>Professional Soft Skills</span>
+              </div>
+            </div>
+            <div class="skill-pill-list">
+              <span class="skill-badge"><span class="badge-dot"></span>Teamwork & Collaboration</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Communication Skills</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Time Management</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Leadership</span>
+              <span class="skill-badge"><span class="badge-dot"></span>Presentation Skills</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & TIMELINE SECTION -->
+    <section class="section-wrapper" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <span>ACADEMIC BACKGROUND</span>
+          </div>
+          <h2 class="section-title">Education & <span class="highlight">Qualifications</span></h2>
+          <p class="section-desc">Solid academic foundation with distinction in Computer Science Engineering coursework.
+          </p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- B.E. Degree -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-year">2023 – 2027</span>
+              <span class="metric-badge">CGPA: 8.48</span>
+            </div>
+            <h3 class="timeline-degree">Bachelor of Engineering</h3>
+            <div style="color:var(--neon-green); font-size: 0.95rem; font-weight:600; margin-bottom: 4px;">
+              Computer Science and Engineering
+            </div>
+            <p class="timeline-inst">Adhiparasakthi Engineering College</p>
+            <p style="font-size:0.85rem; color:var(--text-secondary); line-height: 1.6;">
+              Acquiring deep foundations in Software Engineering, Database Management Systems, Object-Oriented
+              Programming, Data Structures, and Cyber Security.
+            </p>
+          </div>
+
+          <!-- Higher Secondary -->
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <span class="timeline-year">Completed 2023</span>
+              <span class="metric-badge">Score: 75%</span>
+            </div>
+            <h3 class="timeline-degree">Higher Secondary Education</h3>
+            <div style="color:var(--text-secondary); font-size: 0.95rem; font-weight:600; margin-bottom: 4px;">
+              Higher Secondary Certificate (HSC)
+            </div>
+            <p class="timeline-inst">Wisdom Matriculation Higher Secondary School, 2023</p>
+            <p style="font-size:0.85rem; color:var(--text-secondary); line-height: 1.6;">
+              Completed secondary schooling with rigorous focus on Mathematics, Physics and Chemistry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section class="section-wrapper" id="certifications">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            <span>VERIFIED BADGES</span>
+          </div>
+          <h2 class="section-title">Certifications & <span class="highlight">Achievements</span></h2>
+          <p class="section-desc">Continuous skill acquisition across AI/ML, Cloud Computing, Cybersecurity, and
+            competitive Hackathons.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- 1. EY & Microsoft - AI Skills Passport -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">AI Skills Passport</h3>
+              <p class="cert-issuer">EY & Microsoft</p>
+              <div class="cert-meta">
+                <span class="cert-year">2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">Sustainability & Tech AI Employability</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/AI skills.pdf" download="Sairam_R_AI_Skills_Passport.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. AWS Generative AI Foundations -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Generative AI Foundations</h3>
+              <p class="cert-issuer">AWS Academy Graduate</p>
+              <div class="cert-meta">
+                <span class="cert-year">Sep 2025</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">12 Course Hours • LLMs & GenAI</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/AWS Generative AI Foundations.pdf" download="Sairam_R_AWS_GenAI_Foundations.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. AWS Machine Learning Foundations -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Machine Learning Foundations</h3>
+              <p class="cert-issuer">AWS Academy Graduate</p>
+              <div class="cert-meta">
+                <span class="cert-year">Aug 2025</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">20 Course Hours • SageMaker & Cloud ML</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/AWS certificate.pdf" download="Sairam_R_AWS_ML_Foundations.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Universität Stuttgart - AR / VR & Mixed Reality -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Virtual Prototyping: Virtual & Mixed Reality</h3>
+              <p class="cert-issuer">Universität Stuttgart, Germany</p>
+              <div class="cert-meta">
+                <span class="cert-year">Jan 2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">12 Modules • Unreal Engine 5.4</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/ARVR.pdf" download="Sairam_R_Universitat_Stuttgart_ARVR.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. NVIDIA - Fundamentals of Deep Learning -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12a4 4 0 0 1 8 0"></path>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Fundamentals of Deep Learning</h3>
+              <p class="cert-issuer">NVIDIA Deep Learning Institute</p>
+              <div class="cert-meta">
+                <span class="cert-year">2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">Neural Networks & Computer Vision</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/NVDIA - Fundamentals of Deep Learning.pdf" download="Sairam_R_NVIDIA_Deep_Learning.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. NVIDIA - Getting Started with AI on Jetson Nano -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">AI on Jetson Nano</h3>
+              <p class="cert-issuer">NVIDIA Deep Learning Institute</p>
+              <div class="cert-meta">
+                <span class="cert-year">2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">Edge AI & Image Classification</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/NVIDIA - AI on Jetson Nano.pdf" download="Sairam_R_NVIDIA_Jetson_Nano.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Infosys Springboard - AI & ML -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Artificial Intelligence & Machine Learning</h3>
+              <p class="cert-issuer">Infosys Springboard</p>
+              <div class="cert-meta">
+                <span class="cert-year">2025</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">Supervised & Deep Learning Algorithms</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/Infosys AIML.pdf" download="Sairam_R_Infosys_AIML.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. AWS CI/CD Pipeline -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">AWS CI/CD Pipeline Implementation</h3>
+              <p class="cert-issuer">AWS Cloud Training</p>
+              <div class="cert-meta">
+                <span class="cert-year">2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">DevOps, CodePipeline & Automation</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/AWS_CICD Pipeline.pdf" download="Sairam_R_AWS_CICD_Pipeline.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. IBM SkillsBuild - Artificial Intelligence -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">IBM Artificial Intelligence Professional</h3>
+              <p class="cert-issuer">IBM SkillsBuild & Edunet</p>
+              <div class="cert-meta">
+                <span class="cert-year">2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">AI Systems & Cognitive Computing</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/IBM AI Certificate.pdf" download="Sairam_R_IBM_AI_Certificate.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. UNICEF & YuWaah Certificate -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">UNICEF & YuWaah Leadership Initiative</h3>
+              <p class="cert-issuer">UNICEF & YuWaah India</p>
+              <div class="cert-meta">
+                <span class="cert-year">2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">Youth Leadership & Social Innovation</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/Unicef_Certificate.pdf" download="Sairam_R_UNICEF_Certificate.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. TVK Internship -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Software Developer Internship</h3>
+              <p class="cert-issuer">TVK Infotech</p>
+              <div class="cert-meta">
+                <span class="cert-year">2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">Full Stack Web & Database Engineering</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/TVK INTERN.pdf" download="Sairam_R_TVK_Internship.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Smart India Hackathon & IIC Innovation -->
+          <div class="cert-card">
+            <div class="cert-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                <path d="M4 22h16"></path>
+                <path d="M10 14.66V17c0 .55-.45 1-1 1H7v2h10v-2h-2c-.55 0-1-.45-1-1v-2.34c3.24-.76 5-3.53 5-6.66H4c0 3.13 1.76 5.9 5 6.66z"></path>
+              </svg>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Hackathon Participant & Innovator</h3>
+              <p class="cert-issuer">IIC Institution's Innovation Council</p>
+              <div class="cert-meta">
+                <span class="cert-year">2026</span>
+                <span style="font-size:0.75rem; color:var(--text-muted)">Smart India Hackathon • AgriBridge</span>
+              </div>
+              <div class="cert-actions">
+                <a href="certificates/KVCET_ICETADS'25_181.pdf" download="Sairam_R_Hackathon_Conference.pdf" class="cert-download-btn">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & CONNECT SECTION -->
+    <section class="section-wrapper" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>GET IN TOUCH</span>
+          </div>
+          <h2 class="section-title">Let's Build Something <span class="highlight">Exceptional</span></h2>
+          <p class="section-desc">Open for Software Developer Engineer (SDE) entry-level roles, internships, and
+            full-stack opportunities.</p>
+        </div>
+
+        <div class="contact-section-grid">
+          <!-- Interactive Direct Channels -->
+          <div class="contact-channels-card">
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight:700; color:#fff; margin-bottom: 0.5rem;">Direct Channels</h3>
+              <p style="font-size:0.88rem; color:var(--text-secondary);">Click any link to connect directly or use
+                1-click clipboard buttons.</p>
+
+              <div class="contact-channels-list">
+                <!-- Email -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <span class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                    </span>
+                    <div class="channel-meta">
+                      <span class="channel-label">Email</span>
+                      <a href="mailto:sairambramesh@gmail.com" class="channel-value">sairambramesh@gmail.com</a>
+                    </div>
+                  </div>
+                  <div class="channel-actions">
+                    <a href="mailto:sairambramesh@gmail.com" class="btn btn-neon-outline btn-icon-only"
+                      title="Compose Email">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <button class="btn btn-glass btn-icon-only" data-copy="sairambramesh@gmail.com" data-label="Email"
+                      title="Copy Email">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <span class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                      </svg>
+                    </span>
+                    <div class="channel-meta">
+                      <span class="channel-label">Phone / WhatsApp</span>
+                      <a href="tel:+919043627707" class="channel-value">+91 9043627707</a>
+                    </div>
+                  </div>
+                  <div class="channel-actions">
+                    <a href="tel:+919043627707" class="btn btn-neon-outline btn-icon-only" title="Call Now">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                      </svg>
+                    </a>
+                    <button class="btn btn-glass btn-icon-only" data-copy="+919043627707" data-label="Phone Number"
+                      title="Copy Phone Number">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <span class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                      </svg>
+                    </span>
+                    <div class="channel-meta">
+                      <span class="channel-label">LinkedIn</span>
+                      <a href="http://www.linkedin.com/in/sairam-r-471bb2322/" target="_blank" rel="noopener noreferrer"
+                        class="channel-value">linkedin.com/in/sairam-r-471bb2322/</a>
+                    </div>
+                  </div>
+                  <div class="channel-actions">
+                    <a href="http://www.linkedin.com/in/sairam-r-471bb2322/" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-neon-outline btn-icon-only" title="Open LinkedIn Profile">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <span class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                      </svg>
+                    </span>
+                    <div class="channel-meta">
+                      <span class="channel-label">GitHub</span>
+                      <a href="https://github.com/Sairam1604" target="_blank" rel="noopener noreferrer"
+                        class="channel-value">github.com/Sairam1604</a>
+                    </div>
+                  </div>
+                  <div class="channel-actions">
+                    <a href="https://github.com/Sairam1604" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-neon-outline btn-icon-only" title="Open GitHub Profile">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- HackerRank -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <span class="channel-icon">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                          d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.895 16.488h-1.637v-8.976h1.637v8.976zm5.426-3.805c-.295.428-.738.642-1.328.642-.455 0-.822-.123-1.101-.369-.279-.246-.419-.597-.419-1.053v-4.391h1.637v4.137c0 .227.062.399.186.516.124.117.291.176.502.176.248 0 .445-.078.592-.234.147-.156.221-.383.221-.681v-3.914h1.637v5.188h-1.428l-.247-.852z" />
+                      </svg>
+                    </span>
+                    <div class="channel-meta">
+                      <span class="channel-label">HackerRank</span>
+                      <a href="https://www.hackerrank.com/profile/sairambramesh" target="_blank"
+                        rel="noopener noreferrer" class="channel-value">hackerrank.com/profile/sairambramesh</a>
+                    </div>
+                  </div>
+                  <div class="channel-actions">
+                    <a href="https://www.hackerrank.com/profile/sairambramesh" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-neon-outline btn-icon-only" title="Open HackerRank Profile">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                      </svg>
+                    </a>
+                    <button class="btn btn-glass btn-icon-only"
+                      data-copy="https://www.hackerrank.com/profile/sairambramesh" data-label="HackerRank Profile Link"
+                      title="Copy HackerRank Link">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="padding-top: 1rem; border-top: 1px solid var(--border-subtle); display:flex; align-items:center; justify-content:space-between;">
+              <span style="font-size:0.8rem; color:var(--text-muted); font-family:var(--font-mono);">Location: Tamil
+                Nadu, India</span>
+              <a href="resume.pdf" download="Sairam_R_Resume.pdf" class="btn btn-neon-outline"
+                style="font-size:0.8rem; padding: 0.4rem 0.9rem;" title="Download Resume PDF"
+                id="contact-download-resume">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Interactive Contact Form -->
+          <div class="quick-message-card">
+            <h3 style="font-size: 1.25rem; font-weight:700; color:#fff; margin-bottom: 0.5rem;">Send a Quick Message
+            </h3>
+            <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom: 1.5rem;">Direct dispatch to
+              Sairam's inbox with real-time confirmation.</p>
+
+            <form id="quick-contact-form">
+              <div class="form-group">
+                <label class="form-label" for="form-name">YOUR NAME / ORGANIZATION</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex (Engineering Recruiter)"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-email">YOUR EMAIL ADDRESS</label>
+                <input type="email" id="form-email" class="form-input" placeholder="alex@techcompany.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="form-message">MESSAGE / ROLE DETAILS</label>
+                <textarea id="form-message" class="form-textarea"
+                  placeholder="We would love to discuss a Full Stack Developer / SDE role with you..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-neon-primary" style="width: 100%;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                Send Direct Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="logo-badge">SR_</span>
+        <span class="footer-text">© 2026 Sairam R. Built with high-contrast neon green design. All rights
+          reserved.</span>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="btn btn-glass" style="font-size: 0.8rem; padding: 0.4rem 0.85rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+          Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DINEAT ARCHITECTURE & DETAILS MODAL -->
+  <div class="modal-backdrop" id="dineat-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title" id="modal-project-title">
+          <span>DineAt Platform Architecture</span>
+          <span class="neon-badge">Django + MySQL</span>
+        </div>
+        <button class="modal-close-btn modal-close-trigger" aria-label="Close dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section-title">PROJECT SUMMARY & SYSTEM GOALS</div>
+        <p class="modal-desc">
+          DineAt is a full-stack digital food ordering platform designed to eliminate manual restaurant ticketing
+          bottlenecks, provide customers with transparent live order tracking, and enable seamless menu management for
+          culinary staff.
+        </p>
+
+        <div class="modal-section-title">DATA FLOW & SYSTEM WORKFLOW</div>
+        <div class="arch-flow-box">
+          <div class="arch-step">
+            <span class="arch-num">[01]</span>
+            <span><strong>Client Browser (HTML5/CSS3/JS):</strong> Customer browses responsive catalog, triggers dynamic
+              cart additions with instant price computation.</span>
+          </div>
+          <div class="arch-step">
+            <span class="arch-num">[02]</span>
+            <span><strong>Django Controller & Session Auth:</strong> Validates user session, checks authentication
+              token, and invokes order processing rules.</span>
+          </div>
+          <div class="arch-step">
+            <span class="arch-num">[03]</span>
+            <span><strong>MySQL Relational Engine:</strong> Executes ACID transactional order writes across `Orders`,
+              `Order_Items`, and `Inventory` tables.</span>
+          </div>
+          <div class="arch-step">
+            <span class="arch-num">[04]</span>
+            <span><strong>Kitchen & Real-Time Tracking:</strong> Updates live status (Received -> Preparing -> Ready ->
+              Dispatched) for the customer UI.</span>
+          </div>
+        </div>
+
+        <div class="modal-section-title">KEY ENGINEERING HIGHLIGHTS</div>
+        <ul
+          style="color:var(--text-secondary); font-size: 0.88rem; line-height: 1.7; padding-left: 1.25rem; margin-bottom: 1.5rem;">
+          <li>Django MTV (Model-Template-View) design pattern with clean separation of concerns.</li>
+          <li>Comprehensive user authentication and authorization protecting administrative dashboards.</li>
+          <li>Optimized MySQL query structure preventing N+1 problems in catalog rendering.</li>
+          <li>Zero external bloated dependencies for smooth and snappy mobile experiences.</li>
+        </ul>
+
+        <div class="modal-actions">
+          <a href="https://github.com/Sairam1604" target="_blank" rel="noopener noreferrer"
+            class="btn btn-neon-outline">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            Explore Repo on GitHub
+          </a>
+          <button class="btn btn-neon-primary modal-close-trigger">
+            Close Dialog
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AGRIBRIDGE ARCHITECTURE & WORKFLOW MODAL -->
+  <div class="modal-backdrop" id="agribridge-modal" role="dialog" aria-modal="true" aria-labelledby="modal-agri-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title" id="modal-agri-title">
+          <span>AgriBridge Platform Architecture</span>
+          <span class="neon-badge" style="background: rgba(0, 255, 136, 0.15); color: #00ff88;">SIH 2026 • AgriTech</span>
+        </div>
+        <button class="modal-close-btn modal-close-trigger" aria-label="Close dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section-title">PROBLEM STATEMENT (SIH26033)</div>
+        <p class="modal-desc">
+          Multiple intermediaries in agricultural distribution lengthen supply chains, dilute farmer earnings with excessive commissions, inflate consumer prices, and conceal true farm-gate pricing.
+        </p>
+
+        <div class="modal-section-title">TWO-SIDED MARKETPLACE WORKFLOW</div>
+        <div class="arch-flow-box">
+          <div class="arch-step">
+            <span class="arch-num" style="color:#00ff88;">[FARMER]</span>
+            <span><strong>Profile & Inventory Onboarding:</strong> Register/Login -> Verify account -> Setup farmer profile -> Add produce, set quantities & transparent farm prices -> Publish listings.</span>
+          </div>
+          <div class="arch-step">
+            <span class="arch-num" style="color:#00ff88;">[BUYER]</span>
+            <span><strong>Discovery & Ordering:</strong> Set location -> Geo-browse proximate farms -> Compare prices with transparent cost breakdowns -> Add to cart & place order.</span>
+          </div>
+          <div class="arch-step">
+            <span class="arch-num" style="color:#00ff88;">[GATEWAY]</span>
+            <span><strong>Secure Escrow & Settlement:</strong> Process payments safely -> Farmer confirms order -> Dispatches produce via partner logistics -> End-to-end delivery tracking.</span>
+          </div>
+          <div class="arch-step">
+            <span class="arch-num" style="color:#00ff88;">[FEEDBACK]</span>
+            <span><strong>Customer Handover & Rating:</strong> Buyer receives fresh harvest -> Submits verified ratings and quality reviews -> Establishes trustworthy farmer reputation.</span>
+          </div>
+        </div>
+
+        <div class="modal-section-title">INNOVATIVE HIGHLIGHTS & IMPACT</div>
+        <ul
+          style="color:var(--text-secondary); font-size: 0.88rem; line-height: 1.7; padding-left: 1.25rem; margin-bottom: 1.5rem;">
+          <li><strong>Direct Market Access:</strong> Connects growers directly to household and bulk buyers, bypassing middleman fee erosion.</li>
+          <li><strong>Price Transparency:</strong> Displays clear separation of farm price, logistics costs, and consumer price.</li>
+          <li><strong>Pre-Order Harvest:</strong> Allows consumers to pre-book produce cycles before harvesting begins.</li>
+          <li><strong>Nearby Farm Discovery:</strong> Minimizes transit duration, preserving nutritional freshness and reducing carbon food miles.</li>
+          <li><strong>Multi-Language Ready:</strong> Designed with regional language accessibility to ensure effortless adoption across rural farming communities.</li>
+        </ul>
+
+        <div class="modal-actions">
+          <a href="https://www.youtube.com/watch?v=VpT1Clc6IJU" target="_blank" rel="noopener noreferrer"
+            class="btn btn-neon-outline">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Watch Prototype Video
+          </a>
+          <button class="btn btn-neon-primary modal-close-trigger">
+            Close Dialog
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING BOTTOM-RIGHT INTERACTION DOCK -->
+  <aside class="quick-connect-dock" id="quick-dock" aria-label="Quick Connect Dock">
+    <div class="dock-status-indicator">
+      <span class="dock-pulse-dot"></span>
+      <span class="dock-label">CONNECT</span>
+    </div>
+
+    <!-- 1. Mail Interaction Button -->
+    <div class="dock-btn-group">
+      <a href="mailto:sairambramesh@gmail.com" class="dock-btn stroke-icon" title="Email: sairambramesh@gmail.com"
+        aria-label="Send Email">
+        <svg viewBox="0 0 24 24">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span class="dock-tooltip">Email: sairambramesh@gmail.com</span>
+      </a>
+      <button class="dock-mini-copy" data-copy="sairambramesh@gmail.com" data-label="Email Address" title="Copy Email"
+        aria-label="Copy Email">
+        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 2. Phone Number Interaction Button -->
+    <div class="dock-btn-group">
+      <a href="tel:+919043627707" class="dock-btn stroke-icon" title="Phone: +91 9043627707" aria-label="Call Sairam">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </svg>
+        <span class="dock-tooltip">Call: +91 9043627707</span>
+      </a>
+      <button class="dock-mini-copy" data-copy="+919043627707" data-label="Phone Number" title="Copy Phone Number"
+        aria-label="Copy Phone Number">
+        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 3. LinkedIn Interaction Button -->
+    <div class="dock-btn-group">
+      <a href="http://www.linkedin.com/in/sairam-r-471bb2322/" target="_blank" rel="noopener noreferrer"
+        class="dock-btn" title="LinkedIn Profile" aria-label="Open LinkedIn Profile">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+        </svg>
+        <span class="dock-tooltip">LinkedIn Profile</span>
+      </a>
+    </div>
+
+    <!-- 4. GitHub Interaction Button -->
+    <div class="dock-btn-group">
+      <a href="https://github.com/Sairam1604" target="_blank" rel="noopener noreferrer" class="dock-btn"
+        title="GitHub Profile" aria-label="Open GitHub Profile">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        <span class="dock-tooltip">GitHub Profile</span>
+      </a>
+      <button class="dock-mini-copy" data-copy="https://github.com/Sairam1604" data-label="GitHub Link"
+        title="Copy GitHub Link" aria-label="Copy GitHub Link">
+        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- 5. HackerRank Interaction Button -->
+    <div class="dock-btn-group">
+      <a href="https://www.hackerrank.com/profile/sairambramesh" target="_blank" rel="noopener noreferrer"
+        class="dock-btn" title="HackerRank: sairambramesh" aria-label="Open HackerRank Profile">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.895 16.488h-1.637v-8.976h1.637v8.976zm5.426-3.805c-.295.428-.738.642-1.328.642-.455 0-.822-.123-1.101-.369-.279-.246-.419-.597-.419-1.053v-4.391h1.637v4.137c0 .227.062.399.186.516.124.117.291.176.502.176.248 0 .445-.078.592-.234.147-.156.221-.383.221-.681v-3.914h1.637v5.188h-1.428l-.247-.852z" />
+        </svg>
+        <span class="dock-tooltip">HackerRank: sairambramesh</span>
+      </a>
+      <button class="dock-mini-copy" data-copy="https://www.hackerrank.com/profile/sairambramesh"
+        data-label="HackerRank Link" title="Copy HackerRank Link" aria-label="Copy HackerRank Link">
+        <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- FLOATING TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
